@@ -10,7 +10,7 @@ function setTheme(_theme) {
           document
             .querySelector("#theme")
             .setAttribute("href", `themes/${theme}.css`); // Apply the theme by setting the href attribute of the <link> tag
-          setText(); // Update text if needed (assuming this function is defined elsewhere)
+          // setText(); // Update text if needed (function not defined)
         });
         // .catch(err => console.error(err));
       } else {
@@ -53,7 +53,7 @@ function showAllThemes() {
                 if (e.key === "Enter") {
                   // Allow theme selection with Enter key
                   setTheme(theme.id);
-                  inputField.focus();
+                  document.getElementById("Input").focus();
                 }
               });
 
@@ -78,10 +78,10 @@ function showAllThemes() {
 
 function showThemeCenter() {
   document.getElementById("theme-center").classList.remove("hidden"); // Show the theme center
-  document.getElementById("command-center").classList.add("hidden"); // Hide the command center
+  // document.getElementById("command-center").classList.add("hidden"); // Hide the command center (element doesn't exist)
 }
 
 function hideThemeCenter() {
   document.getElementById("theme-center").classList.add("hidden"); // Hide the theme center
-  document.getElementById("command-center").classList.remove("hidden"); // Show the command center
+  // document.getElementById("command-center").classList.remove("hidden"); // Show the command center (element doesn't exist)
 }

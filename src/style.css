@@ -184,9 +184,9 @@ body {
 /*Dropdown Menu*/
 .dropdown-menu {
   padding: 0.5rem;
-  padding-inline: 3.5rem;
+  padding-inline: 4rem;
   margin: 0.6rem;
-  width: auto;
+  width: 92%;
   display: flex;
   flex-direction: column;
   justify-self: center;
@@ -445,7 +445,6 @@ footer {
   color: black;
 }
 
-
 #startBlinking {
   background: linear-gradient(135deg, #6e8efb, #a777e3);
   border: none;
@@ -516,7 +515,12 @@ footer {
     min-height: 130%;
     min-width: 100%;
     fill: rgb(70, 66, 66);
-    background-color: rgba(50, 51, 50, 0.5); /* Green background with 50% opacity */
+    background-color: rgba(
+      50,
+      51,
+      50,
+      0.5
+    ); /* Green background with 50% opacity */
   }
   #theme-area {
     margin-top: 1rem;
@@ -974,12 +978,12 @@ footer {
   main {
     width: 600px;
   }
-  #slispeed{
+  #slispeed {
     width: 115px;
   }
   .outerbox,
   .Input_Fullscreen,
-  .dropdown-menu{
+  .dropdown-menu {
     width: 460px;
   }
   #theme-area {
@@ -1000,12 +1004,12 @@ footer {
   main {
     width: 560px;
   }
-  #slispeed{
+  #slispeed {
     width: 95px;
   }
   .outerbox,
   .Input_Fullscreen,
-  .dropdown-menu{
+  .dropdown-menu {
     width: 423px;
   }
   #theme-area {
@@ -1030,12 +1034,12 @@ footer {
     font-size: 15px;
     padding: 1px;
   }
-  #slispeed{
+  #slispeed {
     width: 72px;
   }
   .outerbox,
   .Input_Fullscreen,
-  .dropdown-menu{
+  .dropdown-menu {
     width: 393px;
   }
   #theme-area {
@@ -1059,7 +1063,7 @@ footer {
   .FSbutton {
     font-size: 13px;
   }
-  #slispeed{
+  #slispeed {
     width: 70px;
   }
   #FontSelector {
@@ -1089,7 +1093,7 @@ footer {
   }
   .outerbox,
   .Input_Fullscreen,
-  .dropdown-menu{
+  .dropdown-menu {
     width: 370px;
   }
   #theme-area {
@@ -1114,7 +1118,7 @@ footer {
   .FSbutton {
     font-size: 10px;
   }
-  #slispeed{
+  #slispeed {
     width: 80px;
   }
   #FontSelector {
@@ -1138,7 +1142,7 @@ footer {
   }
   .outerbox,
   .Input_Fullscreen,
-  .dropdown-menu{
+  .dropdown-menu {
     width: 320px;
   }
   #theme-area {
@@ -1154,7 +1158,6 @@ footer {
     max-width: 320px; /* Ensure it doesn't exceed 1470px */
     box-sizing: border-box;
   }
-
 }
 #text-effect {
   border: none;
@@ -1183,7 +1186,6 @@ footer {
 #FW {
   color: black;
 }
-
 
 /* @media (max-width: 950px) {
   main {

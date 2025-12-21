@@ -6,16 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>LED Text Board</title>
-    <meta name="description" content="typings.gg is a sleek and modern typing test website. it support many custom themes" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💡</text></svg>"
+    />
+    <meta
+      name="description"
+      content="typings.gg is a sleek and modern typing test website. it support many custom themes"
+    />
     <!-- break  standard form -->
-    
+
     <!-- link 2 file css for themes  -->
     <link rel="stylesheet" href="style.css" />
     <link id="theme" rel="stylesheet" href="themes/light.css" />
-    <link rel="stylesheet" href="script/style-theme.css">
+    <link rel="stylesheet" href="script/style-theme.css" />
 
     <!-- break  -->
-
   </head>
   <body>
     <header><h1 class="title">Text Board</h1></header>
@@ -43,7 +49,7 @@
             <li class="color">
               <span>Pick Your Color: </span>
               <input type="color" id="ColorPicker" value="#FFF000" />
-            </li>  
+            </li>
             <li class="font">
               <span>Pick Your Font: </span>
               <select id="FontSelector">
@@ -65,7 +71,9 @@
                 </option>
                 <option value="scroll" id="scroll">Scroll</option>
                 <option value="float" id="float">Float</option>
-                <option value="reset" style="font-weight: bold" id="reset">Reset</option>
+                <option value="reset" style="font-weight: bold" id="reset">
+                  Reset
+                </option>
               </select>
             </li>
 
@@ -79,16 +87,26 @@
                 <option value="empty" class="default-option" disabled selected>
                   Choose An Animation
                 </option>
-                <option value="wobble" id="wob"> Wobble </option>
-                <option value="txt3D" class="text3D"> 3D Text </option>
-                <option value="flame" class="text3D"> Flame</option>
+                <option value="wobble" id="wob">Wobble</option>
+                <option value="txt3D" class="text3D">3D Text</option>
+                <option value="flame" class="text3D">Flame</option>
               </select>
             </li>
 
             <li class="BS">
-              Blink Speed: <input type="range" id="slispeed" min="100" max="2000" step="100" value="500">
-            <span id="speedValue">500</span>ms <button id="startBlinking">Blink</button>
-            <p id="blinkText"></p>
+              Blink Speed:
+              <input
+                type="range"
+                id="slispeed"
+                min="100"
+                max="2000"
+                step="100"
+                value="500"
+              />
+              <span id="speedValue">500</span>ms
+              <button id="startBlinking">Blink</button>
+              <p id="blinkText"></p>
+            </li>
 
             <li class="AS">
               Animation Speed:
@@ -106,28 +124,39 @@
                 <option value="firework" id="FW">Firework</option>
               </select>
             </li>
-            
+
             <li class="FS">
-              <span>Font Size: </span>  
-              <input type="number" name="" id="size" min="100" value="100"/>
-            </li>
+              <span>Font Size: </span>
+              <input type="number" name="" id="size" min="100" value="100" />
             </li>
           </ul>
         </div>
       </div>
     </main>
     <!-- themes function  -->
-    <div id="theme-center" class="hidden"> 
+    <div id="theme-center" class="hidden">
       <!-- grayscale    -->
-      <div class="back_themeArea">  
+      <div class="back_themeArea">
         <div id="left-wing" onClick="hideThemeCenter();">< back</div>
         <div id="theme-area"></div>
-      </div> 
+      </div>
       <!-- break grayscale  -->
     </div>
     <div id="footer">
-      <a href="https://github.com/briano1905/typings#typings" target="_blank" tabindex="3">User guide</a>/
-      <div id="show-themes"class="button" onClick="showThemeCenter();" tabindex="4">Themes</div>
+      <a
+        href="https://github.com/briano1905/typings#typings"
+        target="_blank"
+        tabindex="3"
+        >User guide</a
+      >/
+      <div
+        id="show-themes"
+        class="button"
+        onClick="showThemeCenter();"
+        tabindex="4"
+      >
+        Themes
+      </div>
     </div>
     <!-- break themes function  -->
     <script src="script.js"></script>
@@ -141,6 +170,5 @@
     <script src="text-effect/wobble.js"></script>
     <script src="text-effect/txt3D.js"></script>
     <script src="text-effect/flame.js"></script>
-
   </body>
 </html>
