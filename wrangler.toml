@@ -1,0 +1,8 @@
+name = "led-textboard"
+compatibility_date = "2024-01-01"
+pages_build_output_dir = "src"
+
+[[pages_build_config]]
+# Build command and output directory for Pages
+build_command = "echo 'Static site - no build needed'"
+destination_dir = "src"

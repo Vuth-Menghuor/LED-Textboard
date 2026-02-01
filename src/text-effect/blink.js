@@ -16,7 +16,7 @@ function blinkText() {
       userInput.value,
       textColor.value,
       fontSelector.value,
-      fontsize.value
+      fontsize.value,
     );
   }, speed);
 }
